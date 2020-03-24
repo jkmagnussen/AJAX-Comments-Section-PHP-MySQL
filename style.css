@@ -9,6 +9,8 @@ body {
   margin: 30px;
   padding: 10px;
   font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 
 button {
@@ -19,8 +21,5 @@ button {
   color: white;
   background-color: rgb(105, 105, 175);
   font-weight: 600;
-}
-
-auth {
-  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
 }

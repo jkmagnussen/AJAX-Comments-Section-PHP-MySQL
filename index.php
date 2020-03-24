@@ -7,26 +7,22 @@ include 'dbh.php';
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    //jQuery code here
-    //jQuery code here
-    </script>
+
 </head>
 
 <body>
     <div id="comments">
+        <h2 style="padding-top: 0;">Comments: </h2>
         <?php
 
-    $sql = "SELECT * FROM comments LIMIT 2";
+    $sql = "SELECT * FROM comments";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)){
             echo "<p style=\"font-weight: 600;\">";
             echo $row['author'];
             echo "</p>";
-            echo "<p>";
-            echo "<br>";
+            echo "<p style=\"color: rgb(105, 105, 175);\">";
             echo $row['message'];
             echo "</p>";
         }
@@ -36,10 +32,6 @@ include 'dbh.php';
     }
     ?>
     </div>
-
-
-    <button>Show More Comments</button>
-
 </body>
 
 </html>
