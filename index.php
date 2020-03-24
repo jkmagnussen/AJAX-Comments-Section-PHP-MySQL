@@ -12,7 +12,7 @@ include 'dbh.php';
 
 <body>
     <div id="comments">
-        <h2 style="padding-top: 0;">Comments: </h2>
+        <h2>Comments: </h2>
         <?php
 
     $sql = "SELECT * FROM comments";
