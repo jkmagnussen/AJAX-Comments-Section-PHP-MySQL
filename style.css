@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(199, 199, 199);
+}
+
+#comments {
+  background-color: white;
+  height: 100%;
+  width: 600px;
+  margin: 30px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+button {
+  margin-left: 30px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(105, 105, 175);
+  font-weight: 600;
+}
+
+auth {
+  font-weight: 600;
+}
